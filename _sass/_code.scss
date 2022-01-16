@@ -12,6 +12,10 @@ code {
   margin: 2em auto;
   text-align: center;
 
+  // Fix to prevent content getting too wide
+  max-width: var(--content-width);
+  overflow-x: scroll;
+
   > .highlight {
     border-radius: 0.25em;
     box-shadow:

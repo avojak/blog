@@ -1,59 +1,4 @@
 <div class="social">
-  <h2>Join the Discussion on Social Media</h2>
-
-  {% if page.twitter or page.mastodon or page.reddit or page.facebook %}
-    <div class="official">
-      <h3>Official Posts</h3>
-
-      {% if page.twitter %}
-        <a
-          href="{{ page.twitter }}"
-          rel="noreferrer nofollow noopener"
-          target="_blank"
-          title="Twitter"
-          onclick="plausible('Social: Twitter')"
-        >
-          <img src="{{ '/images/twitter.svg' | prepend: site.baseurl }}" alt="Twitter" />
-        </a>
-      {% endif %}
-
-      {% if page.mastodon %}
-        <a
-          href="{{ page.mastodon }}"
-          rel="noreferrer nofollow noopener"
-          target="_blank"
-          title="Mastodon"
-          onclick="plausible('Social: Mastodon')"
-        >
-          <img src="{{ '/images/mastodon.svg' | prepend: site.baseurl }}" alt="Mastodon" />
-        </a>
-      {% endif %}
-
-      {% if page.reddit %}
-        <a
-          href="{{ page.reddit }}"
-          rel="noreferrer nofollow noopener"
-          target="_blank"
-          title="Reddit"
-          onclick="plausible('Social: Reddit')"
-        >
-          <img src="{{ '/images/reddit.svg' | prepend: site.baseurl }}" alt="Reddit" />
-        </a>
-      {% endif %}
-
-      {% if page.facebook %}
-        <a
-          href="{{ page.facebook }}"
-          rel="noreferrer nofollow noopener"
-          target="_blank"
-          title="Facebook"
-          onclick="plausible('Social: Facebook')"
-        >
-          <img src="{{ '/images/facebook.svg' | prepend: site.baseurl }}" alt="Facebook" />
-        </a>
-      {% endif %}
-    </div>
-  {% endif %}
 
   <div class="share">
     <h3>Share</h3>
@@ -64,19 +9,8 @@
       rel="noreferrer nofollow noopener"
       target="_blank"
       title="Twitter"
-      onclick="plausible('Share: Twitter')"
     >
       <img src="{{ '/images/twitter.svg' | prepend: site.baseurl }}" alt="Twitter" />
-    </a>
-
-    <a
-      href="http://www.reddit.com/submit?title={{ page.title }}&url={{ share-url }}"
-      rel="noreferrer nofollow noopener"
-      target="_blank"
-      title="Reddit"
-      onclick="plausible('Share: Reddit')"
-    >
-      <img src="{{ '/images/reddit.svg' | prepend: site.baseurl }}" alt="Reddit" />
     </a>
 
     <a
@@ -84,7 +18,6 @@
       rel="noreferrer nofollow noopener"
       target="_blank"
       title="Facebook"
-      onclick="plausible('Share: Facebook')"
     >
       <img src="{{ '/images/facebook.svg' | prepend: site.baseurl }}" alt="Facebook" />
     </a>
@@ -101,8 +34,6 @@
 
 <script>
 function share() {
-  plausible('Share: Permalink');
-
   if (navigator.share) {
     navigator.share({
       title: "{{ page.title }}",

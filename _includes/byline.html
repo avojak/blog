@@ -7,7 +7,8 @@
 {% assign date=include.date %}
 
 <div class="byline">
-  <div class="avatar">
+  <!-- No point in displaying avatar and name since it's just me posting :) -->
+  <!-- <div class="avatar">
     <img
       {% if author.gravatar %}
         srcset="https://www.gravatar.com/avatar/{{ author.gravatar }}?s=96&d=blank 2x"
@@ -27,7 +28,7 @@
     {% if author.description and page.layout == 'post' %}
       <span class="description">{{ author.description }}</span>
     {% endif %}
-  </div>
+  </div> -->
   <time class="post-date" datetime="{{ date | date:"%Y-%m-%d" }}">{{ date | date: "%a, %b %e, %Y" }}</time>
   {% if include.content %}
     {% include read-time.html content=include.content %}

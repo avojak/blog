@@ -1,7 +1,11 @@
 body > header {
-  background-color: var(--header-bg-color);
-  color: var(--header-fg-color);
-  fill: var(--header-fg-color);
+  background-color: var(--bg-color);
+  color: var(--fg-color);
+  fill: var(--fg-color);
+
+  nav:last-of-type {
+    border-bottom: 1px solid var(--secondary-bg-color);
+  }
 
   nav {
     display: flex;
@@ -9,6 +13,71 @@ body > header {
     justify-content: space-between;
     overflow-x: auto;
     padding: 0 1rem;
+
+    background-color: var(--bg-color);
+    color: var(--fg-color);
+    fill: var(--fg-color);
+
+    img.avatar {
+      background-color: var(--slate-500);
+      border: 1px solid var(--secondary-fg-color);
+      border-radius: 50%;
+      color: transparent;
+      float: left;
+      height: 32px;
+      margin-right: 0.5em;
+      overflow: hidden;
+      position: relative;
+      vertical-align: middle;
+      width: 32px;
+  
+      border-radius: 50%;
+      box-shadow:
+        inset 0 0 0 1px rgba(0, 0, 0, 0.35),
+        inset 0 0 0 2px rgba(255, 255, 255, 0.1),
+        inset 0 2px 0 0 rgba(255, 255, 255, 0.45),
+        inset 0 -2px 0 0 rgba(255, 255, 255, 0.15),
+        0 1px 3px 0 rgba(0, 0, 0, 0.12),
+        0 1px 2px 0 rgba(0, 0, 0, 0.24);
+      // height: 100%;
+      // position: absolute;
+      // width: 100%;
+
+      @media (prefers-color-scheme: dark) {
+        box-shadow:
+          inset 0 0 0 1px black,
+          inset 0 0 0 2px rgba(255, 255, 255, 0.05),
+          inset 0 2px 0 0 rgba(255, 255, 255, 0.22),
+          inset 0 -2px 0 0 rgba(255, 255, 255, 0.07),
+          0 1px 3px 0 rgba(0, 0, 0, 0.24),
+          0 1px 2px 0 rgba(0, 0, 0, 0.48);
+      }
+
+      // &::before {
+      //   content: "";
+      //   border-radius: 50%;
+      //   box-shadow:
+      //     inset 0 0 0 1px rgba(0, 0, 0, 0.35),
+      //     inset 0 0 0 2px rgba(255, 255, 255, 0.1),
+      //     inset 0 2px 0 0 rgba(255, 255, 255, 0.45),
+      //     inset 0 -2px 0 0 rgba(255, 255, 255, 0.15),
+      //     0 1px 3px 0 rgba(0, 0, 0, 0.12),
+      //     0 1px 2px 0 rgba(0, 0, 0, 0.24);
+      //   height: 100%;
+      //   position: absolute;
+      //   width: 100%;
+  
+      //   @media (prefers-color-scheme: dark) {
+      //     box-shadow:
+      //       inset 0 0 0 1px black,
+      //       inset 0 0 0 2px rgba(255, 255, 255, 0.05),
+      //       inset 0 2px 0 0 rgba(255, 255, 255, 0.22),
+      //       inset 0 -2px 0 0 rgba(255, 255, 255, 0.07),
+      //       0 1px 3px 0 rgba(0, 0, 0, 0.24),
+      //       0 1px 2px 0 rgba(0, 0, 0, 0.48);
+      //   }
+      // }
+    }
 
     ul {
       display: inline-block;
@@ -24,7 +93,7 @@ body > header {
     }
 
     a {
-      color: var(--header-fg-color);
+      color: var(--fg-color);
       display: inline-block;
       font-family: var(--ui-font);
       font-size: 0.85rem;
@@ -57,12 +126,12 @@ body > header {
   }
 
   .secondary {
-    background-color: var(--secondary-bg-color);
+    background-color: var(--bg-color);
     flex-wrap: wrap;
     padding: 0.25rem 1rem;
 
     a {
-      color: var(--secondary-fg-color);
+      color: var(--fg-color);
       font-size: 0.7rem;
     }
 
@@ -73,17 +142,17 @@ body > header {
 
     svg {
       height: 16px;
-      fill: var(--secondary-fg-color);
+      fill: var(--fg-color);
       margin: 0.4rem 0.3rem;
       position: absolute;
     }
 
     #search-input {
-      background-color: var(--bg-color);
+      background-color: var(--secondary-bg-color);
       border: 1px solid rgba(black, 0.15);
       border-radius: 0.3em;
       box-shadow: inset 0 1px 1px rgba(black, 0.05);
-      color: var(--fg-color);
+      color: var(--secondary-fg-color);
       padding: 6px;
       text-indent: 1rem;
       transition: all 200ms ease-in-out;
@@ -179,7 +248,7 @@ body > header {
         }
 
         a:hover {
-          background-color: var(--secondary-bg-color);
+          background-color: var(--bg-color);
         }
       }
     }

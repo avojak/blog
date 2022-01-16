@@ -52,9 +52,11 @@ Non-hidden posts with the same tag(s):
             {% unless post == page.next %}
               {% unless post == page.previous %}
                 {% if page.tags contains tag %}
-                  {% assign sameTagCount = sameTagCount | plus: 1 %}
-                  {% capture tagmarkup %} <span class="label label-default">{{ tag }}</span> {% endcapture %}
-                  {% assign commonTags = commonTags | append: tagmarkup %}
+                  {% if tag != "evergreen" %}
+                    {% assign sameTagCount = sameTagCount | plus: 1 %}
+                    {% capture tagmarkup %} <span class="label label-default">{{ tag }}</span> {% endcapture %}
+                    {% assign commonTags = commonTags | append: tagmarkup %}
+                  {% endif %}
                 {% endif %}
               {% endunless %}
             {% endunless %}
@@ -73,3 +75,4 @@ Non-hidden posts with the same tag(s):
 
   {% endfor %}
 </div>
+<hr />

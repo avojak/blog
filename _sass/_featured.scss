@@ -114,7 +114,7 @@
   %featured-small {
     display: inline-block;
     vertical-align: top;
-    width: 33.33%;
+    width: 33%; // Round down to allow three across in tags view
 
     header {
       font-size: 0.8rem;
