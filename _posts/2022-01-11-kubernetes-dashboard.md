@@ -2,7 +2,7 @@
 title:  "Deploying the Kubernetes Dashboard"
 description: "How to deploy and access the Kubernetes dashboard"
 author: avojak
-image: ""
+image: https://d33wubrfki0l68.cloudfront.net/349824f68836152722dab89465835e604719caea/6e0b7/images/docs/ui-dashboard.png
 tags:
   - software
   - kubernetes

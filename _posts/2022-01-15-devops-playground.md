@@ -3,6 +3,7 @@ title:  "DevOps Playground"
 description: "A small DevOps playground in my homelab"
 author: avojak
 image: https://images.unsplash.com/photo-1604005366359-2f8f2a044336
+hidden: true
 tags:
   - software
   - homelab
@@ -116,6 +117,7 @@ There are other types of provisioners, but in my case I only wanted to accmoplis
 1. Install software updates
 2. Install an SSH key
 
+{% raw %}
 ```json
 {
     ...
@@ -151,6 +153,7 @@ There are other types of provisioners, but in my case I only wanted to accmoplis
     ...
 }
 ```
+{% endraw %}
 
 The SSH key is provided at build time using a variable:
 
