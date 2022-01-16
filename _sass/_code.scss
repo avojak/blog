@@ -13,8 +13,8 @@ code {
   text-align: center;
 
   // Fix to prevent content getting too wide
-  max-width: var(--content-width);
-  overflow-x: scroll;
+  // max-width: var(--content-width);
+  // overflow-x: scroll;
 
   > .highlight {
     border-radius: 0.25em;
@@ -39,6 +39,10 @@ code {
 .rouge-code {
   padding-left: 0.25em;
   padding-right: 1em;
+
+  // > pre {
+  //   max-width: var(--content-width);
+  // }
 }
 
 
@@ -51,6 +55,14 @@ code {
   text-align: left;
   background-color: var(--solarized-base3);
   color: var(--solarized-base01);
+
+  // @media (min-width: 320px) {
+  //   max-width: 75%;
+  // }
+
+  // @media (min-width: 1024px) {
+  //   max-width: 75%;
+  // }
 
   .gl {
     background-color: var(--solarized-base2);
