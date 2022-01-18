@@ -174,3 +174,16 @@ aside.outdated {
 .constrained {
   max-width: var(--content-width);
 }
+
+section.comment-container {
+  position: relative;
+}
+
+small.comment-info {
+  font-family: var(--ui-font);
+  font-size: 0.7em;
+  position: absolute;
+  right: 10px;
+  bottom: 60px;
+  padding: 2px;
+}
