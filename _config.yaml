@@ -24,7 +24,7 @@ plugins:
   - jekyll-sitemap
 
 paginate: 7
-paginate_path: "/archive/:num/"
+paginate_path: "/blog/archive/:num/"
 
 markdown: kramdown
 kramdown:
