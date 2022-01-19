@@ -55,7 +55,7 @@
       <ul id="results-container"></ul>
     </div>
 
-    <script src="/scripts/search.js"></script>
+    <script src="{{ site.baseurl }}/scripts/search.js"></script>
 
     <script>
       document.getElementById('search-container').classList.remove("hidden")
@@ -71,7 +71,7 @@
         </li>`,
         resultsContainer: document.getElementById('results-container'),
         noResultsText: ("No Result Found"),
-        json: '/search.json'
+        json: '{{ site.baseurl }}/search.json'
       })
     </script>
   </nav>
