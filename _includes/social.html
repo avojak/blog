@@ -2,10 +2,10 @@
 
   <div class="share">
     <h3>Share</h3>
-    {% assign share-url = page.url | prepend: site.baseurl | prepend: site.url %}
+    {% assign share-url = page.url | prepend: site.url %}
 
     <a
-      href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ page.url | prepend: site.baseurl | prepend: site.url }}&via={{ site.twitter }}&original_referer={{ page.url | prepend: site.baseurl | prepend: site.url }}"
+      href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ share-url }}&via={{ site.twitter }}&original_referer={{ share-url }}"
       rel="noreferrer nofollow noopener"
       target="_blank"
       title="Twitter"
@@ -14,7 +14,7 @@
     </a>
 
     <a
-      href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | prepend: site.baseurl | prepend: site.url }}"
+      href="https://www.facebook.com/sharer/sharer.php?u={{ share-url }}"
       rel="noreferrer nofollow noopener"
       target="_blank"
       title="Facebook"
@@ -23,7 +23,7 @@
     </a>
 
     <a
-      href="{{ page.url | prepend: site.baseurl | prepend: site.url }}"
+      href="{{ share-url }}"
       title="Permalink"
       onclick="return share()"
     >
