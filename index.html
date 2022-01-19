@@ -46,11 +46,11 @@ redirect_from:
 
 <nav class="pagination">
   {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path }}" class="previous">Newer</a>
+    <a href="/blog{{ paginator.previous_page_path }}" class="previous">Newer</a>
   {% endif %}
 
   {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path }}" class="next">Older</a>
+    <a href="/blog{{ paginator.next_page_path }}" class="next">Older</a>
   {% endif %}
 </nav>
 
