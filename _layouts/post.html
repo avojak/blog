@@ -30,22 +30,26 @@ layout: default
   <section>
     {{ content }}
   </section>
-  <hr />
-  <section class="comment-container">
-    <div id="cusdis_thread"
-      data-host="https://cusdis.com"
-      data-app-id="461c4872-afad-4ca7-b51d-eec3fb87763f"
-      data-page-id="{{ page.url | prepend: site.url }}"
-      data-page-url="{{ page.url | prepend: site.url }}"
-      data-page-title="{{ page.title }}"
-      data-theme="auto"
-    ></div>
-    <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
-    <small class="comment-info"><i>GitHub markdown supported</i></small>
-  </section>
+  
 
 </article>
 
 <!-- {% include license.html %} -->
 {% include social.html %}
+
+<section class="comment-container">
+  <div id="cusdis_thread"
+    data-host="https://cusdis.com"
+    data-app-id="461c4872-afad-4ca7-b51d-eec3fb87763f"
+    data-page-id="{{ page.url | prepend: site.url }}"
+    data-page-url="{{ page.url | prepend: site.url }}"
+    data-page-title="{{ page.title }}"
+    data-theme="auto"
+  ></div>
+  <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
+  <small class="comment-info"><i>GitHub markdown supported</i></small>
+</section>
+
+<hr />
+
 {% include related.html %}
