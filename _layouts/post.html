@@ -35,9 +35,9 @@ layout: default
     <div id="cusdis_thread"
       data-host="https://cusdis.com"
       data-app-id="461c4872-afad-4ca7-b51d-eec3fb87763f"
-      data-page-id="{{ PAGE_ID }}"
-      data-page-url="{{ PAGE_URL }}"
-      data-page-title="{{ PAGE_TITLE }}"
+      data-page-id="{{ page.url | prepend: site.url }}"
+      data-page-url="{{ page.url | prepend: site.url }}"
+      data-page-title="{{ page.title }}"
       data-theme="auto"
     ></div>
     <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
