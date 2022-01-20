@@ -1,8 +1,8 @@
 ---
 title:  "Iridium Turns 1"
-description: "Iridium has reached the 1-year mark since its first release"
+description: "Iridium has reached the one-year mark since its first release"
 author: avojak
-image: https://imgur.com/VUXSRYo
+image: https://i.imgur.com/VUXSRYo.png
 tags:
   - software
   - app
