@@ -5,7 +5,6 @@ author: avojak
 image: https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d
 tags:
   - software
-  - evergreen
 ---
 
 I just completed a redesign of my website based around Jekyll and GitHub Pages! The driving factor here
