@@ -1,5 +1,5 @@
 ---
-title:  "Introducing: Paint Spill"
+title: "Introducing: Paint Spill"
 description: "Paint Spill is the classic color-filling puzzle game built in Vala and GTK, and designed for elementary OS"
 author: avojak
 image: https://raw.githubusercontent.com/avojak/paint-spill/master/data/assets/github/Paint%20Spill%20GitHub%20Repo%20Card.png
