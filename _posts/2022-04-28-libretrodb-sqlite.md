@@ -40,7 +40,7 @@ For attributes that can be common across games, I saved the values off in maps s
 
 ## Database Schema
 
-Once all rows had been parsed, the data is dumped into a database in separate tables. Full details of the schema can be found in the README for the project: https://github.com/avojak/libretrodb-sqlite
+Once all rows had been parsed, the data is dumped into a database in separate tables. Full details of the schema can be found in the README for the project: [https://github.com/avojak/libretrodb-sqlite](https://github.com/avojak/libretrodb-sqlite)
 
 ## Querying Data
 
