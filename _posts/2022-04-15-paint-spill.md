@@ -16,3 +16,7 @@ tags:
 ![paint-spill-screenshot-03](https://raw.githubusercontent.com/avojak/paint-spill/master/data/assets/screenshots/paint-spill-screenshot-03.png)
 </figure>
 
+{% include github-card.html
+  user="avojak"
+  repository="paint-spill"
+%}

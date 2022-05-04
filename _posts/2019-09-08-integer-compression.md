@@ -131,4 +131,7 @@ Long story short, I though these were some pretty cool methods for encoding inte
 
 Here is a link to a GitHub repo where I've put together a couple Python scripts to perform both the compression and decompression techniques:
 
-[https://github.com/avojak/integer-compression](https://github.com/avojak/integer-compression)
+{% include github-card.html
+  user="avojak"
+  repository="integer-compression"
+%}

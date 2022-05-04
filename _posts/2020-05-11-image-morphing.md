@@ -64,7 +64,10 @@ And a somewhat unnerving morphing of my face into a cat [^4]:
 
 ## Finished Product
 
-GitHub: [avojak/image-morphing](https://github.com/avojak/image-morphing)
+{% include github-card.html
+  user="avojak"
+  repository="image-morphing"
+%}
 
 ---
 

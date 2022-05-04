@@ -43,3 +43,8 @@ And the next day, it was available in AppCenter!
 [![Get it on AppCenter](https://appcenter.elementary.io/badge.svg)](https://appcenter.elementary.io/com.github.avojak.warble)
 
 Not bad for a weeks worth of free time!
+
+{% include github-card.html
+  user="avojak"
+  repository="warble"
+%}

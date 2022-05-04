@@ -10,18 +10,21 @@ tags:
 
 The side-project that I've been focusing on lately is [Replay](https://github.com/avojak/replay): a multi-system emulator backed by [Libretro](https://libretro.com) cores.
 
-<figure class="constrained" markdown="1">
-
-![](https://pbs.twimg.com/media/FReRwpWWQAMt5uQ?format=jpg&name=4096x4096)
-
-<figcaption>Screenshot of Replay's Library view at the time of writing</figcaption>
-</figure>
+{% include github-card.html
+  user="avojak"
+  repository="replay"
+%}
 
 One feature that's very important to me is the ability to automatically display information about a game when
 it's added to the library. For example: when the game was released, the genre, other simmilar titles, etc. However, I don't want to need to make
 network requests to a server for every game.
 
 I came across the [database repository for Libretro](https://github.com/libretro/libretro-database) (which backs the extremely popular Retroarch application) and thought I might be able to leverage it! 
+
+{% include github-card.html
+  user="libretro"
+  repository="libretro-database"
+%}
 
 ## Digging Into the Data
 
@@ -40,7 +43,12 @@ For attributes that can be common across games, I saved the values off in maps s
 
 ## Database Schema
 
-Once all rows had been parsed, the data is dumped into a database in separate tables. Full details of the schema can be found in the README for the project: [https://github.com/avojak/libretrodb-sqlite](https://github.com/avojak/libretrodb-sqlite)
+Once all rows had been parsed, the data is dumped into a database in separate tables. Full details of the schema can be found in the README for the project:
+
+{% include github-card.html
+  user="avojak"
+  repository="libretrodb-sqlite"
+%}
 
 ## Querying Data
 

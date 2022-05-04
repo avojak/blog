@@ -15,7 +15,12 @@ This will be the first in an series of posts about my homelab setup. But first, 
 
 For me, it's currently comprised of an old laptop that I converted into a server (For more detail on that project, check out my post: [From Laptop to Rack Mount Server](https://blog.avojak.com/2020/11/25/diy-rack-mount-server/)). I'm still working on installing the software, but the current focus is on home automation software.
 
-The complete source mentioned in this post can be found over in the GitHub repository: [avojak/homelab](https://github.com/avojak/homelab).
+The complete source mentioned in this post can be found over in the GitHub repository:
+
+{% include github-card.html
+  user="avojak"
+  repository="homelab"
+%}
 
 # Overview
 
