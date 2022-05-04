@@ -50,9 +50,9 @@
         var forks = out['forks_count']
         
         // Populate the elements with the data from the response
-        document.getElementById("{{ fullname }}-stargazers").innerHTML += numeral(stargazers).format('0.[0]a') + " Star" + (stargazers > 1 ? "s" : "");
-        document.getElementById("{{ fullname }}-issues").innerHTML += numeral(issues).format('0.[0]a') + " Issue" + (issues > 1 ? "s" : "");
-        document.getElementById("{{ fullname }}-forks").innerHTML += numeral(forks).format('0.[0]a') + " Fork" + (forks > 1 ? "s" : "");
+        document.getElementById("{{ fullname }}-stargazers").innerHTML += numeral(stargazers).format('0.[0]a') + " Star" + (stargazers != 1 ? "s" : "");
+        document.getElementById("{{ fullname }}-issues").innerHTML += numeral(issues).format('0.[0]a') + " Issue" + (issues != 1 ? "s" : "");
+        document.getElementById("{{ fullname }}-forks").innerHTML += numeral(forks).format('0.[0]a') + " Fork" + (forks != 1 ? "s" : "");
         document.getElementById("{{ fullname }}-description").innerHTML = out['description'];
     }).catch((err) => {
       console.error(err);
