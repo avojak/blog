@@ -85,7 +85,15 @@ $ make
 
 The most significant feature here for me was adding the `OFFLINE_BUILD` option. Periodically I've run into scenarios where pulling something from `gitlab.gnome.org` will fail for 15+ minutes at a time. That's no good, so being able to easily build entirely from the local cache is a big plus!
 
+```bash
+$ make OFFLINE_BUILD=
+```
+
 Including the linter is a nice touch as well. Often I would defer linter checks until I pushed code and waited for a GitHub action to send me an angry email. No more!
+
+```bash
+$ make lint
+```
 
 ## Drawbacks
 
