@@ -1,6 +1,6 @@
 ---
 title: "DIY Concrete Gas Fire Pit"
-description: "The first and last time I'm every working with concrete"
+description: "The first and last time I'm ever working with concrete"
 author: avojak
 image: https://s3.us-east-1.amazonaws.com/avojak.com/2022-05-15-diy-concrete-firepit/IMG_3372.jpeg
 tags:
