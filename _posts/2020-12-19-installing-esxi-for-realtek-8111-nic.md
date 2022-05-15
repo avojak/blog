@@ -7,7 +7,7 @@ tags:
   - hardware
 ---
 
-I decided to setup another ESXi host on a [Mini-ITX build that I completed a while ago](https://blog.avojak.com/2020/09/11/elementary-os-desktop-build/). After downloading the latest ESXi ISO (version 7.0), I created the bootable USB drive, fired it up, and... failure. I don't have a picture of the error, but it boiled down to a missing driver for the network card. No matter, I'll just Google away and see what I can find.
+I decided to setup another ESXi host on a [Mini-ITX build that I completed a while ago](https://avojak.com/blog/2020/09/11/elementary-os-desktop-build/). After downloading the latest ESXi ISO (version 7.0), I created the bootable USB drive, fired it up, and... failure. I don't have a picture of the error, but it boiled down to a missing driver for the network card. No matter, I'll just Google away and see what I can find.
 
 Long story short, I struggled non-stop for at least 10 hours trying to get this working before stumbling across the EXACT blog post that I needed to find: [https://www.sysadminstories.com/2018/08/adding-realtek-8111-driver-to-vsphere.html?m=1](https://www.sysadminstories.com/2018/08/adding-realtek-8111-driver-to-vsphere.html?m=1). Turns out that the motherboard I'm using (ASUS Prime H310T R2.0/CSM) has a Realtek 8111 network card, just like the person who wrote the blog. Also very importantly, the author points out that this will not work for ESXi 7.
 

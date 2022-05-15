@@ -62,8 +62,6 @@ And a somewhat unnerving morphing of my face into a cat [^4]:
 
 ![ezgif-1-bcdde6c2d251](https://s3.amazonaws.com/blog.avojak.ghost/2020/05/ezgif-1-bcdde6c2d251.gif)
 
-## Finished Product
-
 {% include github-card.html
   user="avojak"
   repository="image-morphing"

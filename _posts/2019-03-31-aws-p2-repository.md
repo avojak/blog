@@ -12,7 +12,7 @@ tags:
 
 *I promise that this is the latest project related to AWS and p2 for a while!*
 
-Not too long ago I [posted](https://blog.avojak.com/2018/08/10/aws-p2-maven-plugin/) about a [Maven](https://maven.apache.org/) plugin that I had created to deploy a [p2](https://www.eclipse.org/equinox/p2/) repository to [AWS S3](https://aws.amazon.com/s3/). My goal with that plugin was to host the repository for free on AWS, and make it accessible to the public. The drawback that I hadn't considered was that I couldn't easily provide a static URL from which to retrieve the *latest* version of the software. Even with a custom domain name setup, you would still need to know the exact version that you are looking for:
+Not too long ago I [posted](https://avojak.com/blog/2018/08/10/aws-p2-maven-plugin/) about a [Maven](https://maven.apache.org/) plugin that I had created to deploy a [p2](https://www.eclipse.org/equinox/p2/) repository to [AWS S3](https://aws.amazon.com/s3/). My goal with that plugin was to host the repository for free on AWS, and make it accessible to the public. The drawback that I hadn't considered was that I couldn't easily provide a static URL from which to retrieve the *latest* version of the software. Even with a custom domain name setup, you would still need to know the exact version that you are looking for:
 
 `https://p2.avojak.com/hydrogen/releases/1.0.0`
 
