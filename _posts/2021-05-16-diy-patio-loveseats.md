@@ -4,6 +4,7 @@ description: "Taking a dive into the world of woodworking"
 author: avojak
 image: https://s3.amazonaws.com/blog.avojak.ghost/2021/05/IMG_1785-1.jpeg
 tags:
+  - diy
   - woodworking
   - evergreen
 ---
