@@ -47,7 +47,7 @@ found for sale on Amazon.
 ![Rough dimensions](https://s3.us-east-1.amazonaws.com/avojak.com/2022-05-15-diy-concrete-firepit/IMG_1918.jpeg)
 ![Burner kit](https://s3.us-east-1.amazonaws.com/avojak.com/2022-05-15-diy-concrete-firepit/IMG_1922.jpeg)
 
-<figcaption><b>Left:</b> Some bags of Sweet Bloom beans | <b>Right:</b> The burner/igniter kit</figcaption>
+<figcaption><b>Left:</b> Rough dimensions | <b>Right:</b> The burner/igniter kit</figcaption>
 </figure>
 
 Fortunately, our house already has a natural gas hookup on the exterior for a grill. The _original_ plan was to bury a gas line from the external hookup, around our patio,
