@@ -4,8 +4,10 @@ description: "Increase the size of your root partition on an elementary OS VM"
 author: avojak
 image: https://images.unsplash.com/photo-1597852074816-d933c7d2b988
 tags:
-  - elementary-os
   - evergreen
+  - elementary-os
+  - ubuntu
+  - virtual-machine
 ---
 
 I do most of my elementary OS development work within a virtual machine. I'm also not very good at giving myself sufficient disk space, so I have often found myself needing to expand the root partition of my VM.
