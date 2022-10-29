@@ -49,4 +49,8 @@
   <link rel="stylesheet" type="text/css" media="all" href="{{ '/css/main.css' | prepend: site.baseurl | append: '?v=' | append: site.time }}" />
 
   <script src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
+
+  {% if jekyll.environment == "production" and site.url == "https://avojak.com" %}
+    <script defer data-domain="avojak.com" src="https://plausible.vojak.cloud/js/plausible.js"></script>
+  {% endif %}
 </head>
