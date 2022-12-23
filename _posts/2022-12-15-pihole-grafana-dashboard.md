@@ -14,8 +14,14 @@ I also enjoy pretty graphs, so I recently started looking for a way to add Pi-ho
 the other monitoring tools that I came across had a fatal flaw in how they recorded the number of queries throughout the day:
 they simply plotted the "queries today" value at each poll interval. However, Pi-hole tracks queries in 10-minute rolling windows.
 Each value represents the number of queries for the past 23 hours and 50 minutes, plus the number of queries in the current 10-minute
-window. Charting this over time looks like a sawtooth, and isn't what we want. My goal was to replicate the same chart that the Pi-hole
-dashboard shows.
+window. Charting this over time looks like a sawtooth, and isn't what we want:
+
+<figure class="constrained" markdown=1>
+![Not ideal plot](https://s3.amazonaws.com/avojak.com/2022-12-15-pihole-influxdb-monitor/IMG_4107.JPG)
+<figcaption>This plot over time is somewhat misleading</figcaption>
+</figure>
+
+My goal was to replicate the same chart that the Pi-hole dashboard shows.
 
 Using the [REST API](https://discourse.pi-hole.net/t/pi-hole-api/1863), I simply poll the `overTimeData10mins` endpoint and record those
 datapoints in InfluxDB. Sure, there will be a lot of duplicate data, but those datapoints will simply be overwritten in the database.
@@ -36,6 +42,11 @@ for timestamp,count in ads_over_time.items():
         WritePrecision.S
     ))
 ```
+
+<figure class="constrained" markdown=1>
+![Queries over time](https://s3.amazonaws.com/avojak.com/2022-12-15-pihole-influxdb-monitor/queries.png)
+<figcaption>Bingo!</figcaption>
+</figure>
 
 The last major challenge was displaying the tables of Top Queries, Top Ads, and Top Sources. For most other datapoints I was able to simply
 take the JSON data from the API and drop it in as the field data for the database record. However, attempting to group multiple records by time,
