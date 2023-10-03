@@ -323,7 +323,7 @@ After all of that, I finally spent a bit of time putting together a diagram of a
 
 ## References
 
-[^1]: https://www.epmmarshall.com/homelab-intro/
-[^2]: https://www.packer.io/intro
-[^3]: https://code.vmware.com/web/tool/4.4.0/ovf
-[^4]: https://www.terraform.io/use-cases/infrastructure-as-code
+[^1]: [https://www.epmmarshall.com/homelab-intro/](https://www.epmmarshall.com/homelab-intro/)
+[^2]: [https://www.packer.io/intro](https://www.packer.io/intro)
+[^3]: [https://code.vmware.com/web/tool/4.4.0/ovf](https://code.vmware.com/web/tool/4.4.0/ovf)
+[^4]: [https://www.terraform.io/use-cases/infrastructure-as-code](https://www.terraform.io/use-cases/infrastructure-as-code)
