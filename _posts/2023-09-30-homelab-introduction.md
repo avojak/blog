@@ -44,6 +44,35 @@ If all you're curious about is what services I'm running, I'll put that up front
 - [Traefik](https://traefik.io) - Application proxy that I use for routing traffic coming into my homelab, as well as within
 - [Uptime Kuma](https://uptime.kuma.pet) - Simple uptime monitoring for servers, applications, and more
 
+You can check out my Pi-hole InfluxDB Monitor over on GitHub:
+
+{% include github-card.html
+  user="avojak"
+  repository="pihole-influxdb-monitor"
+%}
+
+I also have a blog post about how I created a Grafana dashboard for all the metrics:
+
+<aside>
+  <a class="featured with-image 1" href="https://avojak.com/blog/2022/12/15/pihole-grafana-dashboard/">
+    <div class="featured-image" alt="Featured image" style="background-image: url(https://s3.amazonaws.com/avojak.com/2022-12-15-pihole-influxdb-monitor/dashboard.png);"></div>
+    <header>
+      <h2>Grafana Dashboard for Pi-hole Stats</h2>
+      <h3>Excessive Pi-hole monitoring with pretty graphs!</h3>
+      <div class="byline">
+        <div class="avatar">
+          <img srcset="https://www.gravatar.com/avatar/4dfa9066e794647fdedf323ecab85333?s=96&amp;d=blank 2x" src="https://www.gravatar.com/avatar/4dfa9066e794647fdedf323ecab85333?s=48&amp;d=blank" alt="Avatar for Andrew Vojak">
+        </div>
+        <div class="author">
+          <span class="name">Andrew Vojak</span>
+        </div>
+        <time class="post-date" datetime="2022-12-15">Thu, Dec 15, 2022</time>
+        <span class="read-time" title="Estimated read time">3 min read</span>
+      </div>
+    </header>
+  </a>
+</aside>
+
 ## The Hardware
 
 My setup is always evolving, but for now I am using a total of six physical servers: five Mac minis and one custom-build rack-mount server. Each server will be running VMware ESXi as the hypervisor. In a nutshell, a hypervisor is what is installed on the bare metal machine (host) to run and manage virtual machines (guests). The hypervisor provides the guests with isolated, [virtual hardware](https://en.wikipedia.org/wiki/Hardware_virtualization) on which to run.
